@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Andrei Sereg film</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+  <link href='resources/css/default.css' rel="stylesheet" type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap async defer"></script>
+  <script src="resources/javascript/JavaScript.js"></script>
+  <script src="resources/javascript/yt.js"></script>
+</head>
+
+<body>
+  <div id="bkVideoContainer">
+    <div data-id="06s5HM3xDSE"></div>
+    <!--<video class="background-video" autoplay muted loop id="player" poster="assets/images/MoviePlaceholder.png">
+            <source src="assets/movies/andrei_sereg_video.mp4" type="video/mp4" />
+        </video>-->
+  </div>
+  <div class="parralax-overlay"></div>
+  <div class="centeredContainer">
+    <!--<input style="position:absolute;top:0;left:0" type="file" accept="video/*" />-->
+    <div class="centeredElement">
+      <div class="navbar">
+        <ul>
+          <li><a class="underline" href="#home">Home</a></li>
+          <li><a class="underline" href="#about">About me</a></li>
+          <li><a class="underline" href="#portfolio">Portfolio</a></li>
+          <li><img src="assets/images/Logo_black.png" /></li>
+          <li><a class="underline" href="#offer">Pachet Servicii</a></li>
+          <li><a class="underline" href="#collaboration">Colaboratori</a></li>
+          <li><a class="underline" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="player-controls">
+    <button class="muteUnmuteButton fa fa-volume-up"></button>
+    <!--<button class="unmuteButton fa fa-volume-off"></button>-->
+    <button class="playPauseButton fa fa-pause"></button>
+    <button class="fullScreenButton fa fa-desktop"></button>
+    <!--<button class="showParralaxButton fa fa-calendar"></button>-->
+  </div>
+  <footer>
+    <span>
+            coipirait 20016
+        </span>
+  </footer>
+
+  <!--TODO: how to show video description-->
+  <div id="portfolio" class="modalDialog">
+    <div class="portfolio-placeholder-list">
+      <div class="portfolio-placeholder grow">
+        <a class="videolink" href="https://www.youtube.com/embed/Yz4Ba3kNuQU" />
+        <img src="assets/images/portfolioPlaceholders/AurelianAndAdrian.jpg" />
+        <!--<span>Some description</span>-->
+      </div>
+      <div class="portfolio-placeholder grow">
+        <a class="videolink" href="https://www.youtube.com/embed/oezbd_dkUlo" />
+        <img src="assets/images/portfolioPlaceholders/NuntaCosminaSiGelu.jpg" />
+        <!--<span>Some description</span>-->
+      </div>
+      <div class="portfolio-placeholder grow">
+        <a class="videolink" href="https://www.youtube.com/embed/lhpp3PKzuD4" />
+        <img src="assets/images/portfolioPlaceholders/NuntaElenaSiAlex.jpg" />
+        <!--<span>Some description</span>-->
+      </div>
+    </div>
+    <!--TODO: when clicking other sections, youtube player audio still heard-->
+    <div class="youtubePlayer">
+      <a class="closeButton"></a>
+      <div class="youTubeVideo">
+        <iframe width="640" height="480"></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="modalDialog">
+    <div class="aboutWrapper">
+      <div class="profileImageContainer">
+        <img src="assets/images/profilePicture.jpg" />
+      </div>
+      <div class="profileTextContainer">
+        <img src="assets/images/Logo_black.png" />
+        <p>
+          In spatele camerei...
+        </p>
+
+        <p>
+          ...ma gasiti pe mine, Andrei Sereg, videograful.
+        </p>
+
+        <p>
+          Cand eram adolescent am participat la cateva evenimente sociale si am fost fascinat de prestatia echipelor foto-video.
+        </p>
+        <p>
+          Nu stiam ce presupune aceasta meserie, dar mi-a captivat atentia.
+        </p>
+
+        <p>
+          Dupa putin timp am avut sansa sa invat bazele videografiei, de la cel ce mi-a pus pentru prima oara in maini o camera video.
+        </p>
+
+        <p>
+          In timp am realizat ca dragostea pentru frumos, oameni si viata, te ajuta sa creezi un film deosebit, care sa transmita emotie si sa o pastreze vie in amintirile voastre peste ani si ani.
+        </p>
+
+        <p>
+          Sunt fericit atunci cand surprind prin vizorul camerei iubire, pasiune, bucurie, viata.
+        </p>
+        <p>
+          Sunt si mai fericit cand creez o pelicula care va face pe voi sa fiti fericiti.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="offer" class="modalDialog">
+    <div class="offerList">
+      <table class="offerTable">
+        <thead>
+          <tr>
+            <td></td>
+            <td class="sapphireHeader">
+              Safir
+            </td>
+            <td class="smaraldHeader">
+              Smarald
+            </td>
+            <td class="rubinHeader">
+              Rubin
+            </td>
+            <td class="diamondHeader">
+              Diamant
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Disponibilitate
+            </td>
+            <td colspan="4">
+              Disponibilitatea mea este pana la ora 4 a.m. sau maxim o ora dupa tort.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Durata si format filmare
+            </td>
+            <td>
+              Filmarea in regim HD, materialul video final va avea o durata de 60 minute
+            </td>
+            <td>
+              Filmarea in regim HD, materialul video final va avea o durata de 80 minute
+            </td>
+            <td>
+              Filmarea in regim HD, materialul video final va avea o durata de 120 minute
+            </td>
+            <td>
+              Filmarea in regim HD, materialul video final va avea o durata de 180 minute
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Continut filmare
+            </td>
+            <td>
+              <p>O selectie cu toate momentele desfasurate in cadrul evenimentului</p>
+            </td>
+            <td>
+              <p>O selectie cu toate momentele desfasurate in cadrul evenimentului</p>
+              <p>teaserul evenimentului</p>
+            </td>
+            <td>
+              <p>O selectie cu toate momentele desfasurate in cadrul evenimentului</p>
+              <p>teaserul evenimentului</p>
+              <p>shootingul make-up</p>
+            </td>
+            <td>
+              <p>O selectie cu toate momentele desfasurate in cadrul evenimentului</p>
+              <p>teaserul evenimentului</p>
+              <p>shootingul make-up</p>
+              <p>invitatia electronica - Save the date (care se va realiza inainte de eveniment la o data convenita de comun acord)</p>
+              <p><strong>sedinta trash the dress</strong> (care va avea loc dupa eveniment la o data convenita de comun acord, dar care poate influenta termenul de predare a materialului final) si va fi predat atat pe suport </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Material predat
+            </td>
+            <td colspan="3">
+              Materialul va fi predat atat pe suport DVD cat si pe suprot Blu-Ray. Discurile sunt personalizate iar carcasa este din piele cu insertie de lemn si gravura.
+            </td>
+            <td>
+              Materialul va fi predat atat pe suport DVD cat si pe suprot Blu-Ray, in 2 exemplare. Discurile sunt personalizate iar carcasa este din piele cu insertie de lemn si gravura.
+            </td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              Pachetul presupune prezenta mea pe intreaga durata a evenimentului dvs. Disponibilitatea mea este pana la ora 4 a.m. sau maxim o ora dupa tort. Filmarea se face in regim HD, materialul video final va avea o durata de 60 minute, va cuprinde o selectie
+              cu toate momentele desfasurate in cadrul evenimentului si va fi predat atat pe suport DVD cat si pe suport Blu-Ray, discurile sunt personalizate iar carcasa este din piele cu insertie de lemn si gravura. Termenul de predare al materialului
+              final este de 60 de zile din momentul evenimentului. La acest pachet poti achizitiona separat urmatoarele optiuni: - o ora de filmare - al doilea cameraman - invitatie electronica (Save the date) - shooting make-up - trash the dress - teaser
+              eveniment
+            </td>
+            <td>
+              Pachetul presupune prezenta mea pe intreaga durata a evenimentului dvs. Disponibilitatea mea este pana la ora 4 a.m. sau maxim o ora dupa tort. Filmarea se face in regim HD, materialul video final va avea o durata de 60 minute, va cuprinde o selectie
+              cu toate momentele desfasurate in cadrul evenimentului si va fi predat atat pe suport DVD cat si pe suport Blu-Ray, discurile sunt personalizate iar carcasa este din piele cu insertie de lemn si gravura. Termenul de predare al materialului
+              final este de 60 de zile din momentul evenimentului. La acest pachet poti achizitiona separat urmatoarele optiuni: - o ora de filmare - al doilea cameraman - invitatie electronica (Save the date) - shooting make-up - trash the dress - teaser
+              eveniment
+            </td>
+            <td>
+              Pachetul presupune prezenta mea pe intreaga durata a evenimentului dvs. Disponibilitatea mea este pana la ora 4 a.m. sau maxim o ora dupa tort. Filmarea se face in regim HD, materialul video final va avea o durata de 60 minute, va cuprinde o selectie
+              cu toate momentele desfasurate in cadrul evenimentului si va fi predat atat pe suport DVD cat si pe suport Blu-Ray, discurile sunt personalizate iar carcasa este din piele cu insertie de lemn si gravura. Termenul de predare al materialului
+              final este de 60 de zile din momentul evenimentului. La acest pachet poti achizitiona separat urmatoarele optiuni: - o ora de filmare - al doilea cameraman - invitatie electronica (Save the date) - shooting make-up - trash the dress - teaser
+              eveniment
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="collaboration" class="modalDialog">
+    <!--TODO: intro animation -->
+    <div class="collaboratorsList">
+      <a href="http://www.blissphotography.ro/" target="_blank">
+        <img class="wiggle" src="assets/images/partners/blissPhotography.png" />
+        <br />
+        <span>Bliss Photography</span>
+      </a>
+      <a href="https://www.facebook.com/CorinaHedreaPhotography/" target="_blank">
+        <img class="wiggle_opposite" src="assets/images/partners/corinaHedrea.png" />
+        <br />
+        <span>Corina Hedrea Photography</span>
+      </a>
+      <a href="https://www.facebook.com/DjRebel.ro" target="_blank">
+        <img class="wiggle" src="assets/images/partners/djRebel.jpg" />
+        <br />
+        <span>DJ Rebel</span>
+      </a>
+      <a href="http://fotogruia.ro/" target="_blank">
+        <img class="wiggle_opposite" src="assets/images/partners/fotoGruia.png" />
+        <br />
+        <span>Foto Gruia</span>
+      </a>
+    </div>
+  </div>
+  <div id="contact" class="modalDialog">
+    <h2>Contact Me</h2>
+    <div class="mapContainer">
+      <div class="googleMap" />
+    </div>
+    <div class="addressWrapper">
+      <p>
+        <strong>Address:</strong><br /> Str. Lisabona<br /> Mosnita Noua<br /> Timis
+        <br /> Romania
+      </p>
+      <p>
+        <strong>Phone:</strong><br /> 0740236344
+      </p>
+      <p>
+        <strong>E-mail:</strong><br /> a.sereg@yahoo.com
+      </p>
+    </div>
+    <div class="socialContainer">
+      <!-- TODO: put social container at the bottom -->
+      <a target="_blank" href="">
+        <span class="fa fa-circle" />
+        <span class="fa fa-facebook" />
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
