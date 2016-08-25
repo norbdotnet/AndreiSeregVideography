@@ -65,8 +65,8 @@ function playVideo(e) {
     } else {
         showYTPlayer();
     }
-    $('.youTubeVideo > iFrame').attr('src', 'https://www.youtube.com/embed/40DykbPa4Lc' + "?autoplay=1")
-    //$('.youTubeVideo > iFrame').attr('src', self.href + "?autoplay=1")
+    //$('.youTubeVideo > iFrame').attr('src', 'https://www.youtube.com/embed/40DykbPa4Lc' + "?autoplay=1")
+    $('.youTubeVideo > iFrame').attr('src', self.href + "?autoplay=1&fs=0")
 
     return false;
 }
