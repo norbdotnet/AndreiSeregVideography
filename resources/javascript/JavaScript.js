@@ -1,6 +1,5 @@
 "use strict";
 
-
 $('document').ready(function () {
     //$('.playButton').hide();
     //$('.muteButton').hide();

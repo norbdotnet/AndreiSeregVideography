@@ -36,7 +36,7 @@ function onPlayerReady() {
 }
 
 function ytPlayPause() {
-    if (player == undefined) return false;
+    if (player === undefined) return false;
 
     let isPaused = (player.getPlayerState() == 2) || (player.getPlayerState() == -1);
 
@@ -56,7 +56,7 @@ function ytPlayPause() {
 }
 
 function ytMuteUnmute() {
-    if (player == undefined) return false;
+    if (player === undefined) return false;
 
     let isMuted = player.isMuted();
 

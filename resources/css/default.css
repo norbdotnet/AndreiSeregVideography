@@ -331,7 +331,7 @@ div.collaboratorsList {
 .collaboratorsList img {
     box-shadow: 8px 8px 10px #aaa;
     border-radius: 15px;
-    height: 100%;
+    height: 180px;
     background-color: white;
     margin-bottom:10px;
 }
