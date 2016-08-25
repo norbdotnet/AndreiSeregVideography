@@ -43,7 +43,7 @@ $('document').ready(function () {
 //        position: map.getCenter(),
 //        map: map,
 //        optimized: false,
-//        icon: '/assets/images/mapMarker.png'
+//        icon: '/resources/images/mapMarker.png'
 //    });
 //}
 
