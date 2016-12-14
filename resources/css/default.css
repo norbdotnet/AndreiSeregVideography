@@ -101,10 +101,9 @@ li a {
 li img {
   display: block;
   width: auto;
-  height: 50px;
+  height: 46px;
   margin: 0 15px 0 15px;
 }
-
 
 /*#endregion*/
 
@@ -285,10 +284,10 @@ li img {
 }
 
 .portfolio-separator {
-  transform:rotate(90deg);
-  float:left;
-  height:50px;
-  margin-top:85px;
+  transform: rotate(90deg);
+  float: left;
+  height: 50px;
+  margin-top: 85px;
 }
 
 .portfolio-separator span {
@@ -310,6 +309,7 @@ div.youtubePlayer {
   height: 480px;
   width: 640px;
 }
+
 
 /*.youTubeVideo {
     display: none;
