@@ -73,10 +73,12 @@ function playVideo(e) {
 
 function showYTPlayer() {
     $('.youtubePlayer').css('opacity', '1');
+    $('.youtubePlayer').css('z-index', '999');
 }
 
 function hideYTPlayer() {
     $('.youtubePlayer').css('opacity', '0');
+    $('.youtubePlayer').css('z-index', '-1');
     $('.youTubeVideo > iFrame').attr('src', '');
 }
 

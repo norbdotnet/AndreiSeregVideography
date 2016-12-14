@@ -229,6 +229,7 @@ li img {
 
 .youtubePlayer {
   opacity: 0;
+  z-index: -1;
   width: 640px;
   height: 480px;
   -moz-transition: opacity ease-in 0.3s;
@@ -279,16 +280,36 @@ li img {
   float: left;
 }
 
+.portfolio-placeholder img {
+  width: 244px;
+}
+
+.portfolio-separator {
+  transform:rotate(90deg);
+  float:left;
+  height:50px;
+  margin-top:85px;
+}
+
+.portfolio-separator span {
+  color: #999999;
+}
+
 div.portfolio-placeholder-list {
   margin-top: 20px;
-  display: flex;
+  display: inline-block;
+}
+
+div.youtubePlayer {
+  position: fixed;
+  top: 25%;
+  left: 33%;
 }
 
 .youTubeVideo {
   height: 480px;
   width: 640px;
 }
-
 
 /*.youTubeVideo {
     display: none;
