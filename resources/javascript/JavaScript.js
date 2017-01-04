@@ -67,7 +67,8 @@ function playVideo(e) {
     }
     //$('.youTubeVideo > iFrame').attr('src', 'https://www.youtube.com/embed/40DykbPa4Lc' + "?autoplay=1")
     $('.youTubeVideo > iFrame').attr('src', self.href + "?autoplay=1&fs=0")
-
+    
+    goFullScreenInternal(".youTubeVideo > iFrame");
     return false;
 }
 
@@ -83,7 +84,11 @@ function hideYTPlayer() {
 }
 
 function goFullscreen() {
-    var elem = $("#bkVideoContainer")[0];
+  goFullScreenInternal("#bkVideoContainer");
+}
+
+function goFullScreenInternal(selector){
+  var elem = $(selector)[0];
     if (elem.requestFullscreen) {
         elem.requestFullscreen();
     } else if (elem.msRequestFullscreen) {
