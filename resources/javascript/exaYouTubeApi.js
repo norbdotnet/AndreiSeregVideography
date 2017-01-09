@@ -40,14 +40,25 @@ function ytPlayPause() {
   let isPaused = (player.getPlayerState() == 2) || (player.getPlayerState() == -1);
 
   if (isPaused) {
-    player.playVideo();
-    playPauseButtons.removeClass("fa-play");
-    playPauseButtons.addClass("fa-pause");
+    ytPlay();
   } else {
-    player.pauseVideo();
-    playPauseButtons.removeClass("fa-pause");
-    playPauseButtons.addClass("fa-play");
+    ytPause();
   }
+}
+
+function ytPlay() {
+  if (player === undefined) return false;
+
+  player.playVideo();
+  playPauseButtons.removeClass("fa-play");
+  playPauseButtons.addClass("fa-pause");
+}
+
+function ytPause() {
+  if (player === undefined) return false;
+  player.pauseVideo();
+  playPauseButtons.removeClass("fa-pause");
+  playPauseButtons.addClass("fa-play");
 }
 
 function ytMuteUnmute() {
@@ -56,16 +67,24 @@ function ytMuteUnmute() {
   let isMuted = player.isMuted();
 
   if (isMuted) {
-    player.unMute();
+    ytUnmute();
   } else {
-    player.mute();
+    ytMute();
   }
+}
 
-  if (isMuted) {
-    muteUnmuteButtons.removeClass("fa-volume-off");
-    muteUnmuteButtons.addClass("fa-volume-up");
-  } else {
-    muteUnmuteButtons.removeClass("fa-volume-up");
-    muteUnmuteButtons.addClass("fa-volume-off");
-  }
+function ytMute() {
+  if (player === undefined) return false;
+  
+  player.mute();
+  muteUnmuteButtons.removeClass("fa-volume-up");
+  muteUnmuteButtons.addClass("fa-volume-off");
+}
+
+function ytUnmute() {
+  if (player === undefined) return false;
+  
+  player.unMute();
+  muteUnmuteButtons.removeClass("fa-volume-off");
+  muteUnmuteButtons.addClass("fa-volume-up");
 }
