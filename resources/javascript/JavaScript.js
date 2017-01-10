@@ -63,6 +63,7 @@ function playVideo(e) {
         hideYTPlayer();
         setTimeout(showYTPlayer(), 300);
     } else {
+        ytMute();
         showYTPlayer();
     }
     //$('.youTubeVideo > iFrame').attr('src', 'https://www.youtube.com/embed/40DykbPa4Lc' + "?autoplay=1")
