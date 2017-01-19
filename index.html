@@ -8,7 +8,7 @@
   <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
   <link href='resources/css/default.css' rel="stylesheet" type='text/css' />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
   <script src="resources/javascript/JavaScript.js"></script>
   <script src="resources/javascript/exaYouTubeApi.js"></script>
 </head>
@@ -420,11 +420,15 @@
 
       <br/><br/>
       
-      <form action="" method="post">
-        <label for="Message">Mesaj:</label><br />
-        <textarea name="message" rows="10" cols="50" id="message"></textarea>
+      <form action="" method="post">        
+        <label for="email_from">De la:</label><br />        
+        <input id="email_from" name="email_from" type="text" placeholder="Numele dumneavoastra"></input><br />     
+        <label for="email_contact">Metoda de contact (email, nr.tel):</label><br />        
+        <input id="email_contact" name="email_contact" type="text" placeholder="Cum va pot contacta"></input><br /><br /> 
+        <label for="email_message">Mesaj:</label><br />
+        <textarea id="email_message" name="email_message" rows="10" cols="50"></textarea>
         <br/>
-        <input type="submit" name="submit" value="Trimite mail" />
+        <input type="submit" name="submit" value="Trimite mail" onclick="sendMail();" />
       </form>
     </div>
   </div>
