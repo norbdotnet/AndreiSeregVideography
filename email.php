@@ -1,11 +1,10 @@
 <?php
 if($_POST){
     $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['text'];
+    $contact = $_POST['contact'];
+    $message = $_POST['message'];
   
-    $subject = "Request from " . $name."(".$email.")";
-  
+    $subject = "Request from " . $name."(".$contact.")";
     mail("office@seregfilm.ro", $subject, $message);
 }
 ?>

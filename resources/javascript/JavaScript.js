@@ -113,7 +113,7 @@ function hideVideo(e) {
 
 function sendMail() {
   var data = {
-    email: $("#email_from").val(),
+    name: $("#email_from").val(),
     contact: $("#email_contact").val(),
     message: $("#email_message").val()
   };
