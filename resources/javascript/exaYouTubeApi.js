@@ -4,6 +4,8 @@ var player;
 var playPauseButtons = [];
 var muteUnmuteButtons = [];
 
+$.getScript("https://www.youtube.com/iframe_api");
+
 function onYouTubeIframeAPIReady() {
   let playerContainer = $("#bkVideoContainer div")[0];
 
