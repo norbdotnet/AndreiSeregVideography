@@ -124,7 +124,7 @@ function sendMail() {
     data: data,
     success: function() {
       $('.success').fadeIn(1000);
-      alert("E");
+      alert("Mesajul a fost trimis cu succes");
     }
   });
 }

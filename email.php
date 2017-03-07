@@ -4,7 +4,7 @@ if($_POST){
     $contact = $_POST['contact'];
     $message = $_POST['message'];
   
-    $subject = "Request from " . $name."(".$contact.")";
+    $subject = "Request from " . $name." (".$contact.")";
     mail("office@seregfilm.ro", $subject, $message);
 }
 ?>
